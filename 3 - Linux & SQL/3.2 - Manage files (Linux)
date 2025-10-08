@@ -1,0 +1,134 @@
+Here is the content from the attached PDF, reformatted into a text file suitable for GitHub documentation or README usage:[1]
+
+```
+# Linux File Management - Task Guide
+
+## Project Description
+The analyst team tasked me to execute essential organizational tasks on a Linux system using the command-line interface (Bash shell) via Linux Terminal. The tasks included:
+
+1. Find and search files
+2. Create and remove a directory
+3. Move and remove a file
+4. Create and edit a file
+
+---
+
+## 1. Find and Search Files
+
+### Search for Log Entries
+To locate a log file whose lines contain the string "error", use:
+
+```
+cd logs
+cat server_logs.txt
+# or
+cat /home/analyst/logs/server_logs.txt
+```
+
+Sample output:
+```
+2022-09-28 13:56:22 error The password is incorrect
+2022-09-28 15:56:22 error The username is incorrect
+2022-09-28 16:56:22 error The password is incorrect
+2022-09-29 13:56:22 error An unexpected error occurred
+2022-09-29 15:56:22 error Unauthorized access
+2022-09-29 16:56:22 error Unauthorized access
+```
+
+To filter lines that match "error":
+```
+grep error server_logs.txt
+```
+
+### Search for Specific Files
+To find files whose names contain `Q1` or `access` in the `users` directory:
+
+```
+cd /home/analyst/reports/users
+ls | grep Q1
+ls | grep access
+```
+Sample output:
+```
+Q1_access.txt
+Q1_added_users.txt
+Q1_deleted_users.txt
+Q2_access.txt
+Q3_access.txt
+Q4_access.txt
+```
+
+### Search File Contents
+To locate the username `jhill` in `Q2_deleted_users.txt`:
+```
+grep jhill Q2_deleted_users.txt
+```
+To find who was added to the Human Resources department in Q4:
+```
+grep "Human Resources" Q4_added_users.txt
+```
+
+---
+
+## 2. Create and Remove a Directory
+
+### Create a Directory
+```
+mkdir logs
+```
+### Remove a Directory
+```
+rmdir temp
+```
+
+---
+
+## 3. Move and Remove a File
+
+### Move a File
+To move `Q3patches.txt` to another directory:
+```
+mv Q3patches.txt /home/analyst/report
+```
+
+### Remove a File
+Navigate to the notes directory and remove `tempnotes.txt`:
+```
+cd ~/notes
+rm tempnotes.txt
+```
+
+---
+
+## 4. Create and Edit a File
+
+### Create a File
+```
+touch tasks.txt
+```
+
+### Edit a File
+```
+nano tasks.txt
+# Press CTRL + X to exit, Y to save, Enter to confirm filename.
+```
+
+### View File Content
+```
+cat tasks.txt
+```
+Sample content:
+```
+Completed tasks
+1. Managed file structure in /home/analyst
+```
+
+---
+
+## Completed Tasks
+- Successfully found and searched files using Linux commands
+- Created and removed directories as required
+- Moved and deleted files using the command line
+- Created and edited text files in nan
+```
+
