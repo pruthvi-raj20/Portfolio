@@ -1,0 +1,12 @@
+File permissions in Linux
+Project description
+In this scenario, the research team tasked me to modify the permissions for files and
+directories within the project directory. The operating system is Linux, indicating that the
+tasks require a command-line interface (Linux Bash shell) approach via Linux Terminal.
+Check file and directory details
+To begin with, I wrote the command ls to display what directories are available. As the result
+goes, the project is the only directory listed. Then, the command ls with the -la displays
+file contents as well as the hidden files within the directory of the project. The result shows
+there is one hidden file within the project directory. The hidden file naming conventions
+start with a period (.), followed by its name. In this case, ”.project_x.txt” is the hidden
+file. Other findings include four project files (ends with .txt) and one drafts directory.
