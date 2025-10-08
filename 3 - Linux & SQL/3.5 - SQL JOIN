@@ -1,0 +1,160 @@
+Here is the content from the provided PDF, converted into a GitHub-compatible text file format for documentation:[1]
+
+```
+# SQL JOIN Queries - Task Guide
+
+## Project Description
+Management requested investigation of potential security issues and updating employee computers using SQL join queries on two tables in MariaDB. This task applies relational database management concepts.
+
+---
+
+## Tables Overview
+
+- **employees:** Contains employee data including employee ID and username.
+- **machines:** Contains device details including device ID and operating system.
+
+---
+
+## SQL JOIN Types Applied
+
+### 1. Inner Join
+Focuses on the intersection of two tables, returning rows with matching values in both.
+
+Example query to get username, operating system, and employee ID:
+```
+SELECT employees.username,
+       machines.operating_system,
+       employees.employee_id
+FROM employees
+INNER JOIN machines ON employees.device_id = machines.device_id;
+```
+- Returns 185 matching rows with usernames, OS, and device IDs.
+
+---
+
+### 2. Extended Inner Join
+Returns additional details including office location:
+```
+SELECT employees.username,
+       employees.employee_id,
+       machines.operating_system,
+       machines.device_id,
+       employees.office
+FROM employees
+INNER JOIN machines ON employees.device_id = machines.device_id;
+```
+
+---
+
+### 3. Left Join
+Includes all records from the left table (`machines`) and matching rows from the right table (`employees`). If no match, the employee fields have NULL values.
+
+```
+SELECT *
+FROM machines
+LEFT JOIN employees ON machines.device_id = employees.device_id;
+```
+- Returns all 200 machines records, with NULL employee data where unmatched.
+
+---
+
+### 4. Right Join
+Includes all records from the right table (`employees`) and matching rows from the left table (`machines`). If no match, machine fields have NULL values.
+
+```
+SELECT *
+FROM machines
+RIGHT JOIN employees ON machines.device_id = employees.device_id;
+```
+- Returns all 200 employee records, with NULL machine data where unmatched.
+
+---
+
+## Summary
+- Performed relational database management tasks by joining two tables in three ways: Inner Join, Left Join, and Right Join.
+- Inner Join returns matching rows only.
+- Left Join returns all rows from the left table and matched rows from the right.
+- Right Join returns all rows from the right table and matched rows from the left.
+- NULL values appear where no matching data exists due to join type differences.
+
+This aids in security investigations and managing employee-computer relationships in the organization.
+```
+
+This GitHub text file explains SQL JOIN types with examples and their use in managing relational data for cybersecurity tasks.Here is the content from the provided SQL JOIN PDF, converted into a GitHub text file format for documentation:[1]
+
+```
+# SQL JOIN Queries - Task Guide
+
+## Project Description
+Management requested investigation of potential security issues and updating employee computers using SQL join queries on two tables in MariaDB. The task involved relational database management concepts using SQL JOIN operations.
+
+---
+
+## Tables Overview
+- **employees**: Contains employee data including employee ID and username.
+- **machines**: Contains device details including device ID and operating system.
+
+---
+
+## SQL JOIN Types Applied
+
+### 1. Inner Join
+Focuses on the intersection of two tables, returning rows with matching values in both tables.
+
+Example query to get username, operating system, and employee ID:
+```
+SELECT employees.username,
+       machines.operating_system,
+       employees.employee_id
+FROM employees
+INNER JOIN machines ON employees.device_id = machines.device_id;
+```
+Returns 185 matching rows with usernames, OS, and device IDs.
+
+Extended query to include office:
+```
+SELECT employees.username,
+       employees.employee_id,
+       machines.operating_system,
+       machines.device_id,
+       employees.office
+FROM employees
+INNER JOIN machines ON employees.device_id = machines.device_id;
+```
+
+---
+
+### 2. Left Join
+Includes all records from the left table (machines) and matched rows from the right table (employees). Unmatched employee columns appear as NULL.
+
+```
+SELECT *
+FROM machines
+LEFT JOIN employees ON machines.device_id = employees.device_id;
+```
+Returns all 200 rows from machines, including those without assigned employees.
+
+---
+
+### 3. Right Join
+Includes all records from the right table (employees) and matched rows from the left table (machines). Unmatched machine columns appear as NULL.
+
+```
+SELECT *
+FROM machines
+RIGHT JOIN employees ON machines.device_id = employees.device_id;
+```
+Returns all 200 rows from employees, including those without assigned machines.
+
+---
+
+## Summary
+- Used SQL JOINs to combine employee and machine data for cybersecurity investigations.
+- Inner Join returns rows with matching keys in both tables.
+- Left Join returns all rows from the left table plus matching right table rows.
+- Right Join returns all rows from the right table plus matching left table rows.
+- NULL values indicate unmatched data after JOINs.
+
+These queries help analyze employee-device relationships and support security audits.
+```
+
