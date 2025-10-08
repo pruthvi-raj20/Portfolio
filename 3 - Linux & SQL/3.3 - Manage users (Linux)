@@ -1,0 +1,95 @@
+Here is the reorganized content from the provided PDF, formatted as a GitHub text file suitable for README documentation:[1]
+
+```
+# Linux User Management - Task Guide
+
+## Project Description
+A new employee (researcher9) joined the organization, requiring user access management via the Linux command-line interface (Bash shell). Tasks included adding users, managing groups, assigning file ownership, and account removal.
+
+---
+
+## Essential User Management Commands
+
+1. **Add a user to the system**
+```
+sudo useradd researcher9
+```
+
+2. **Assign a user to a specific (primary) group**
+```
+sudo usermod -g research_team researcher9
+```
+
+3. **Delete a user from the system**
+```
+sudo userdel researcher9
+```
+
+4. **Delete the user's group**
+```
+sudo groupdel researcher9
+```
+*Note: When a new user is created, a group with the same name is also created. Clean up empty groups after the user is deleted.*
+
+5. **Assign ownership of a file**
+```
+sudo chown researcher9 /home/researcher2/projects/project_r.txt
+```
+
+*All commands require `sudo` privileges ("super user do!").*
+
+---
+
+## Step-by-Step Task Execution
+
+### Add User and Assign to Group
+
+To add researcher9 and set their primary group:
+```
+sudo useradd researcher9
+sudo usermod -g research_team researcher9
+```
+Or combine both steps:
+```
+sudo useradd researcher9 -g research_team
+```
+
+---
+
+### Assign File Ownership
+
+Give researcher9 ownership of project files:
+```
+sudo chown researcher9 /home/researcher2/projects/project_r.txt
+```
+
+---
+
+### Add Secondary Group Membership
+
+If researcher9 needs access to both research and sales departments:
+```
+sudo usermod -a -G sales_team researcher9
+```
+*The `-a -G` options add secondary group membership without affecting the primary group.*
+
+---
+
+### Delete User and Clean Up
+
+To remove researcher9 after leaving the company:
+```
+sudo userdel researcher9
+sudo groupdel researcher9
+```
+
+---
+
+## Summary
+
+- Added new users with `useradd`[file:2]
+- Assigned users to primary and secondary groups via `usermod`[file:2]
+- Transferred file ownership with `chown`[file:2]
+- Deleted users and cleaned up associated groups using `userdel` and `groupdel`[file:2]
+```
+
