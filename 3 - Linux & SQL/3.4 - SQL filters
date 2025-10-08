@@ -1,0 +1,106 @@
+Here is the content from the provided PDF, formatted as a GitHub text file suitable for README documentation:[1]
+
+```
+# SQL Filtering - Task Guide
+
+## Project Description
+Management requested an investigation into potential security issues and employee computer updates. As a Linux administrator, SQL database queries with filters were used to find critical data and audit logs.
+
+---
+
+## Security Audit Scenarios and SQL Filters
+
+### 1. Retrieve After Hours Failed Login Attempts
+
+To find failed logins after business hours, use:
+
+```
+SELECT *
+FROM log_in_attempts
+WHERE login_time > '18:00:00'
+  AND success = 0;
+```
+
+*Finds failed login attempts after 18:00 (after hours). Success column value 0 denotes failure; value 1 denotes success.*[file:3]
+
+---
+
+### 2. Login Attempts on Specific Dates
+
+For suspicious login activity on certain days:
+
+```
+SELECT *
+FROM log_in_attempts
+WHERE login_date = '2022-05-09'
+   OR login_date = '2022-05-08';
+```
+
+*Outputs login events that occurred on the target dates. Results included 75 login attempts on these two days.*[file:3]
+
+---
+
+### 3. Login Attempts Outside Mexico
+
+To investigate login attempts outside of Mexico:
+
+```
+SELECT *
+FROM log_in_attempts
+WHERE NOT country LIKE 'MEX%';
+```
+
+*Lists all login events not attributed to Mexico, including variants like MEX, MEXICO. There were 144 login attempts outside Mexico.*[file:3]
+
+---
+
+### 4. Employees in Marketing - East Building
+
+To filter employee machines by department and office location:
+
+```
+SELECT *
+FROM employees
+WHERE department = 'Marketing'
+  AND office LIKE 'East%';
+```
+
+*Returns employees in Marketing department located in offices prefixed "East". Seven employees matched the criteria.*[file:3]
+
+---
+
+### 5. Employees in Finance or Sales
+
+To find all employees from either Finance or Sales:
+
+```
+SELECT *
+FROM employees
+WHERE department = 'Finance'
+   OR department = 'Sales';
+```
+
+*Lists all employees in those departments. There were 71 matching employees.*[file:3]
+
+---
+
+### 6. Employees Not in IT
+
+To find employees not part of the Information Technology department:
+
+```
+SELECT *
+FROM employees
+WHERE NOT department = 'Information Technology';
+```
+
+*Filters out all employees that are part of IT. Used for targeted device updates and audit tasks.*[file:3]
+
+---
+
+## Summary
+
+- SQL queries with logical operators (AND, OR, NOT) and pattern matching (LIKE, %) were used to audit business hours, departmental affiliation, and anomalous logins[file:3]
+- Queries supported cybersecurity tasks and organizational audits using real-world filter scenarios[file:3]
+```
+
