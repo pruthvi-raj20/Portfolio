@@ -1,4 +1,3 @@
-Here is a GitHub-friendly text file version of your PDF content, formatted for clarity and markdown compatibility:
 
 ```
 # Home Asset Inventory
@@ -46,5 +45,5 @@ Then, you’ll list important characteristics of each device such as its owner, 
 | Storage devices / Servers | Continuous | Cloud provider   | On-premises      | Contains database for my projects               | Confidential  |
 | Laptop            | Occasional    | Homeowner           | On-premises      | Contains work files                             | Restricted    |
 
-*Ketmanto Wangsa - Cybersecurity Portfolio*
+
 ```
