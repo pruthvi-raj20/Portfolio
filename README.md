@@ -70,17 +70,9 @@ Several tools that I used:
 * Suricata
 * Python 
 
-### Other references 
-Please have a look on other standalone portfolio that I published: 
-* Python - Cybersecurity - [Bruteforce Zipfile](https://github.com/Kwangsa19/Python-Cybersecurity-Bruteforce-zipfile)
-* Python - Cybersecurity - [Automation Case](https://github.com/Kwangsa19/Python-Cybersecurity-Automation-Case)
-* Python - Cybersecurity - [Transaction Fraud](https://github.com/Kwangsa19/Python-Cybersecurity-Transaction-Fraud) 
-* Cybersecurity - Investigation & Risk Assessment Based on [MITRE ATT&CK Framework and Open-Source Intelligence (OSINT)](https://github.com/Kwangsa19/Cybersecurity-Investigation-Risk-Report)
-
-and more....
 
 **Stay tuned for updates!**
 
 This portfolio will continuously grow as I complete more certificates and projects. I encourage you to visit again to see my progress and learn more about my skills and experience.
-Thank you for your time. For more information, please connect with me on [Linkedin](linkedin.com/in/ketmanto-wangsa/).
+Thank you for your time. For more information, please connect with me on [Linkedin](www.linkedin.com/in/pruthviraj-s-803470347).
 # Portfolio
