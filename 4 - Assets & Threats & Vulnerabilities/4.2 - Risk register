@@ -1,0 +1,49 @@
+
+```
+# Risk Register
+
+## Operational Environment
+
+The bank is located in a coastal area with low crime rates. Many people and systems handle the bank's data—100 on-premise employees and 20 remote employees. The customer base of the bank includes 2,000 individual accounts and 200 commercial accounts. The bank's services are marketed by a professional sports team and ten local businesses in the community. There are strict financial regulations that require the bank to secure their data and funds, including having enough cash available each day to meet Federal Reserve requirements[attached_file:2].
+
+---
+
+## Risk Assessment Table
+
+| Asset             | Risk(s)                  | Description                              | Likelihood | Severity | Priority |
+|-------------------|--------------------------|------------------------------------------|------------|----------|----------|
+| Funds             | Business email compromise| An employee is tricked into sharing confidential information. | 1          | 3        | 3        |
+| Compromised user database | Poor encryption       | Customer data is poorly encrypted.        | 2          | 6        | 12       |
+| Financial records | Leak                      | Database server of backed up data is publicly accessible.   | 2          | 6        | 12       |
+| Theft             | Physical access           | The bank's safe is left unlocked.         | 1          | 3        | 3        |
+| Supply chain      | Disruption                | Delivery delays due to natural disasters. | 1          | 3        | 3        |
+
+---
+
+## Notes
+
+How are security events possible considering the risks the asset faces in its operating environment?
+
+- Doing business with third party companies might increase the risks to data since other entities might have access to it[attached_file:2].
+- Theft and supply chain disruption due to natural disasters can be ruled out since it is a low crime rate area and natural disasters are unlikely to occur[attached_file:2].
+
+---
+
+## Scoring System
+
+- **Likelihood:** Score: 1 (Low likelihood), 2 (Moderate likelihood), 3 (High likelihood)
+- **Severity:** Score: 1 (Low impact), 2 (Moderate impact), 3 (High impact)
+- **Priority:** Calculated by Likelihood x Impact Severity
+
+---
+
+## Sample Risk Matrix
+
+|             | Low (1)    | Moderate (2)   | Catastrophic (3) |
+|-------------|------------|----------------|------------------|
+| Certain (3) | 3          | 6              | 9                |
+| Likely (2)  | 2          | 4              | 6                |
+| Rare (1)    | 1          | 2              | 3                |
+
+
+```
