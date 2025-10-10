@@ -1,0 +1,50 @@
+Here is a GitHub-friendly text file version of your PDF content, formatted for clarity and markdown compatibility:
+
+```
+# Home Asset Inventory
+
+## Project Description
+
+One of the most valuable assets in the world today is information. Most information is accessed over a network. There tend to be a variety of devices connected to a network and each is a potential entry point to other assets.
+
+An inventory of network devices can be a useful asset management tool. An inventory can highlight sensitive assets that require extra protection.
+
+A home office that includes a desktop computer, printer, router, webcam, speakers, headphones, and external hard drive.
+
+You’re operating a small business from your home and must create an inventory of your network devices. This will help you determine which ones contain sensitive information that require extra protection.
+
+To do this, you will start by identifying three devices that have access to your home network. This might include devices such as:
+
+1. Desktop or laptop computers
+2. Smartphones
+3. Smart home devices
+4. Game consoles
+5. Storage devices or servers
+6. Video streaming devices
+
+Then, you’ll list important characteristics of each device such as its owner, location, and type. Finally, you will assign each device a level of sensitivity based on how important it is to protect.
+
+### Categories
+
+| Access Designation | Description                |
+|--------------------|---------------------------|
+| Restricted         | Need-to-know              |
+| Confidential       | Limited to specific users |
+| Internal-only      | Users on-premises         |
+| Public             | Anyone                    |
+
+---
+
+## Asset Inventory Table
+
+| Asset             | Network Access | Owner               | Location         | Notes                                           | Sensitivity   |
+|-------------------|---------------|---------------------|------------------|-------------------------------------------------|--------------|
+| Network router    | Continuous    | Internet Service Provider (ISP) | On-premises      | Has a 2.4 GHz and 5 GHz connection. All devices on the home network connect to the 5 GHz frequency. | Confidential  |
+| Desktop           | Occasional    | Homeowner           | On-premises      | Contains private information, like photos.      | Restricted    |
+| Guest smartphone  | Occasional    | Friend              | On and Off-premises | Connects to my home network.                    | Internal-only |
+| Smart home devices| Occasional    | Homeowner           | On and Off-premises | Connects to my home network.                    | Internal-only |
+| Storage devices / Servers | Continuous | Cloud provider   | On-premises      | Contains database for my projects               | Confidential  |
+| Laptop            | Occasional    | Homeowner           | On-premises      | Contains work files                             | Restricted    |
+
+*Ketmanto Wangsa - Cybersecurity Portfolio*
+```
