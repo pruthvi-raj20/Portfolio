@@ -1,0 +1,69 @@
+# Data Leak Worksheet
+
+## Scenario Description
+
+You work for an educational technology company that developed an application to help teachers automatically grade assignments. The application collects data from academic institutions, instructors, parents, and students. Recently, the team was alerted to a data leak of internal business plans on social media. Investigation revealed an employee accidentally shared confidential documents with a customer. An audit is underway to prevent future incidents[attached_file:3].
+
+---
+
+## Incident Summary
+
+- A sales manager shared access to a folder of internal-only documents with their team during a meeting.
+- The folder contained files about a new, unannounced product, customer analytics, and promotional materials.
+- After the meeting, access to the internal folder was not revoked, although the team was told to wait for approval before sharing promotional materials.
+- A sales team member, during a video call, intended to share a link to promotional material but mistakenly shared the internal folder link.
+- The business partner posted the link to the internal folder on social media, believing it was promotional content[attached_file:3].
+
+---
+
+## Analysis
+
+### Control: Least Privilege
+
+**Issue(s):**
+- Internal folder access was made public to all employees and the manager.
+- Business partner shared confidential information on social media without authorization[attached_file:3].
+
+**Review:**
+- NIST SP 800-53: AC-6 addresses protecting data privacy by implementing least privilege.
+- Users or entities should only have the access needed for their tasks[attached_file:3].
+
+### Recommendations
+
+- Restrict access to sensitive resources based on user roles (Role Based Access)
+- Regularly audit user privileges[attached_file:3]
+
+### Justification
+
+- Restricting internal files to employees only will reduce risk.
+- Regular audits of access by managers and security teams limit exposure of sensitive information[attached_file:3].
+
+---
+
+## Security Plan Snapshot
+
+The NIST Cybersecurity Framework (CSF) uses a hierarchical structure:
+
+| Function  | Category       | Subcategory     | References            |
+|-----------|----------------|----------------|-----------------------|
+| Protect   | PR.DS: Data security | PR.DS-5: Protections against data leaks | NIST SP 800-53: AC-6   |
+
+In this example, controls against data leaks are taken from NIST SP 800-53[attached_file:3].
+
+---
+
+## NIST SP 800-53: AC-6
+
+**Definition:** Only minimal access and authorization required to complete a task or function should be provided[attached_file:3].
+
+**Discussion:** Processes, user accounts, and roles should be enforced to ensure least privilege. Users must not have higher privilege levels than required for business objectives[attached_file:3].
+
+**Control Enhancements:**
+- Restrict access based on user role
+- Automatically revoke access after a set period
+- Maintain activity logs for user accounts
+- Regularly audit user privileges[attached_file:3]
+
+---
+
+*Ketmanto Wangsa - Cybersecurity Portfolio*
