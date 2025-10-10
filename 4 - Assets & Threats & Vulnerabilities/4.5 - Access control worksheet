@@ -1,0 +1,32 @@
+# Access Control Worksheet
+
+## Scenario
+
+You are the first cybersecurity professional hired by a growing business. Recently, a deposit was made from the business to an unknown bank account. The finance manager confirmed no mistake on their part, and the payment was stopped. The owner has asked for an investigation to prevent future incidents. The steps include reviewing the access log, identifying a possible threat actor, spotting exploited access control issues, and providing recommendations for access control improvement[attached_file:4].
+
+---
+
+## Access Log Review
+
+**Incident Information:**
+- Who caused this incident? Administrator.
+- When did it occur? 10/03/2023.
+- What device was used? Up2-NoGud. The IP address of the computer used to login is 152.207.255.255[attached_file:4].
+
+---
+
+## Authorization Issues
+
+- What level of access did the user have? Administrator. The specific user is Robert Taylor Junior.
+- Should their account be active? No. His contract ended in 2019, but his account accessed the payroll system in 2023[attached_file:4].
+
+---
+
+## Recommendations
+
+- User accounts should expire after 30 days[attached_file:4].
+- As contractors, their access to business resources should be limited[attached_file:4].
+- Multi-factor authentication should be implemented[attached_file:4].
+
+---
+
