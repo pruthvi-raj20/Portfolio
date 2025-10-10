@@ -1,0 +1,53 @@
+# Incident Handler’s Journal
+
+## Scenario 1: Healthcare Ransomware Attack
+
+A small U.S. healthcare clinic experienced a ransomware attack on January 16, 2024. Employees lost access to critical files, severely disrupting business operations. Ransom notes appeared on computers, demanding payment in exchange for decryption keys. The attack resulted from phishing emails containing malicious attachments, leading to ransomware deployment and system encryption[attached_file:5].
+
+**Key Points:**
+- Attacker: Organized group of hackers
+- Incident: Ransomware—files and records inaccessible, business operations halted
+- Entry Time: Tuesday morning, January 16, 2024
+- Root Cause: Employees downloaded attachments from phishing emails
+- Business Impact: Operational shutdown, ransom demand
+- Prevention Suggestions: Increase training and awareness on phishing, maintain secure offline backups, isolate infected systems, seek assistance from cybersecurity authorities and firms, do not pay ransoms[attached_file:5].
+
+---
+
+## Scenario 2: PII Breach and Blackmail
+
+On January 22, 2024, an unauthorized actor accessed approximately 50,000 customer records, affecting both PII and financial data. The incident involved extortion attempts demanding cryptocurrency payments to avoid public data disclosure. A forced browsing vulnerability in the company’s web application enabled this unauthorized access. The incident cost an estimated $100,000 in direct losses and potential revenue impact[attached_file:5].
+
+**Key Points:**
+- Attacker: Malicious actor (cyber criminal)
+- Timeline: January 20-22, 2024
+- Nature: Data theft and blackmail (increasing ransom demand, evidence of data exfiltration)
+- Root Cause: Application vulnerability exploited by “forced browsing” (modifying order number in URL for unauthorized data access)
+- Prevention Suggestions: Routine vulnerability scans and penetration testing, enforce URL allowlisting, prompt incident reporting, increase user training, use investigation playbooks[attached_file:5].
+
+---
+
+## Scenario 3: SOC Alert—Malicious Attachment
+
+At a financial services company, a SOC analyst investigated a suspicious file downloaded via a phishing email (January 17, 2024). The employee opened a password-protected spreadsheet, which delivered a malicious payload. VirusTotal was used to analyze the file hash for Indicators of Compromise (IoCs). The incident was escalated to a Level 2 SOC analyst[attached_file:5].
+
+**Key Points:**
+- Attacker: Cyber criminal (malicious actor)
+- Nature: Phishing leading to malware execution via spreadsheet
+- Timeline: January 17-18, 2024
+- Response: Alert raised and incident escalated (ticket ID A-AD3CO, assigned as “medium” severity)
+- Prevention Suggestions: Never download suspicious email attachments, rigorous phishing awareness training, prompt reporting/escalation for all suspected phishing activity[attached_file:5].
+
+---
+
+## Reflections and General Recommendations
+
+- Consistent training and awareness are major recurring themes for preventing and mitigating incidents.
+- Maintain secure, regular backups to support incident recovery and avoid ransomware impacts.
+- Ensure user accounts and access logs are properly monitored and strictly controlled.
+- Employ robust vulnerability management for web applications.
+- Always escalate uncertain incidents to a higher SOC analyst level for further action.
+- Communication with external stakeholders and authorities is crucial after major incidents[attached_file:5].
+
+---
+
